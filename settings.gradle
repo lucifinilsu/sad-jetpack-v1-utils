@@ -1,0 +1,22 @@
+//配置gradle的远程依赖仓库
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+        maven { url "https://jitpack.io" }
+    }
+}
+
+//配置项目的远程依赖仓库
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        maven { url "https://jitpack.io" }
+    }
+}
+rootProject.name = "sad-jetpack-v1-utils"
+include ':app'
+include ':sad-jetpack-v1-utils'

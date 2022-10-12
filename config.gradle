@@ -1,0 +1,83 @@
+ext {
+    android = [
+            buildToolsVersion: "33.0.0",
+            compileSdkVersion: 33,
+            minSdkVersion    : 21,
+            targetSdkVersion : 33,
+            abortOnLintError : false,
+            checkLintRelease : false,
+            useJack          : false,
+            abortOnLintError : false,
+            javaVersion      : JavaVersion.VERSION_1_8,
+            javaVersionInt   : "8",
+            isDebug          : false
+    ]
+
+    //"appcompat"                        : "androidx.appcompat:appcompat:${dependVersion["android_support"]}",
+    dependencies = [
+            //android
+            "appcompat"                        : "androidx.appcompat:appcompat:1.5.0",
+            "constraintlayout"                 : "androidx.constraintlayout:constraintlayout:2.1.4",
+            "multidex"                         : "androidx.multidex:multidex:2.0.1",
+            "material"                         : "com.google.android.material:material:1.8.0-alpha01",
+            //"lifecycle-extensions"             : "androidx.lifecycle:lifecycle-extensions:",
+//            "lifecycle-viewmodel"              : "androidx.lifecycle:lifecycle-viewmodel:2.3.1",
+//            "lifecycle-livedata"               : "androidx.lifecycle:lifecycle-livedata:2.3.1",
+//            "lifecycle-runtime"                : "androidx.lifecycle:lifecycle-runtime:2.3.1",
+//            "lifecycle-compiler"               : "androidx.lifecycle:lifecycle-compiler:2.3.1",
+//            "lifecycle-common-java8"           : "androidx.lifecycle:lifecycle-common-java8:2.3.1",
+//            "lifecycle-reactivestreams"        : "androidx.lifecycle:lifecycle-reactivestreams:2.3.1",
+            "workmanager"                      : "androidx.work:work-runtime:2.7.1",
+//            "workmanager-gcm"                  : "androidx.work:work-gcm:2.5.0",
+
+
+            //test
+            "junit"                            : "androidx.test.ext:junit:latest.release",
+            "espresso-core"                    : "androidx.test.espresso:espresso-core:latest.release",
+
+            //sad-jetpack
+            "local_appgo_annotation"           : ":architecture:appgo:appgo-annotation",
+            "appgo_annotation"                 : "com.sad.jetpack.architecture.appgo:annotation:1.0.9",
+            "local_appgo_api"                  : ":architecture:appgo:appgo-api",
+            "appgo_api"                        : "com.sad.jetpack.architecture.appgo:api:1.1.2",
+            "lib-ClassScanner"                 : "com.github.lucifinilsu.Sad-JetPack:ClassScanner:1.0.3RC4",//"com.sad.jetpack.lib.classscanner:ClassScanner:1.0.1-Beta6",
+            "local_componentization_api"       : ":architecture:componentization:api",
+            "local_componentization_annotation": ":architecture:componentization:annotation",
+            "local_componentization_compiler"  : ":architecture:componentization:compiler",
+            "componentization_annotation"      : "com.sad.jetpack.architecture.componentization:annotation:1.0.9",
+            "componentization_api"             : "com.sad.jetpack.architecture.componentization:api:1.2.4",
+            "componentization_compiler"        : "com.sad.jetpack.architecture.componentization:compiler:1.0.2",
+            //SAD
+            /*"sad-architecture-api"     : "com.sad.architecture.api:sad-architecture-api:${dependVersion["sad-architecture-api"]}",
+            "sad-appgo-api"            : "com.sad.core.appgo:sad-appgo-api:${dependVersion["sad-appgo-api"]}",
+            "sad-architecture-compiler": "com.sad.architecture.compiler:sad-architecture-compiler:latest.release",
+            "sad-appgo-compiler"       : "com.sad.core.appgo:sad-appgo-compiler:latest.release",
+            "sad-cache"                : "com.sad.assistant:sad-cache:latest.release",
+            "sad-async"                : "com.sad.core.async:sad-async:latest.release",
+            "sad-datastore"            : "com.sad.assistant:sad-datastore:latest.release",
+            "sad-basic"                : "com.sad.basic:sad-basic:latest.release",*/
+
+            //第三方
+            "immersionbar"                     : "com.gyf.immersionbar:immersionbar:latest.release",
+            "immersionbar-components"          : "com.gyf.immersionbar:immersionbar-components:latest.release",
+            "auto-service"                     : "com.google.auto.service:auto-service:latest.release",
+            "connectionclass"                  : "com.facebook.network.connectionclass:connectionclass:latest.release",
+            "okhttp"                           : "com.squareup.okhttp3:okhttp:latest.release",
+            "logging-interceptor"              : "com.squareup.okhttp3:logging-interceptor:latest.release",
+            "okio"                             : "com.squareup.okio:okio:latest.release",
+            "jsoup"                            : "org.jsoup:jsoup:latest.release",
+            "gson"                             : "com.google.code.gson:gson:latest.release",
+            "glide"                            : "com.github.bumptech.glide:glide:latest.release",
+            "glide-compiler"                   : "com.github.bumptech.glide:compiler:latest.release",
+            "hoko-blur"                        : "com.hoko:hoko-blur:latest.release",
+            "picture_library"                  : "com.github.LuckSiege.PictureSelector:picture_library:latest.release",
+            "permission"                       : "com.yanzhenjie:permission:latest.release",
+            "javapoet"                         : 'com.squareup:javapoet:latest.release',
+            "commons-io"                       : 'commons-io:commons-io:2.8.0',
+
+            //self
+            "self-demo-TestModule1"            : ":demo:TestModule1"
+
+
+    ]
+}

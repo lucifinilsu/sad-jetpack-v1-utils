@@ -10,7 +10,7 @@ import org.gradle.api.Project
 
 import java.lang.reflect.Constructor
 
-class ClassScanner {
+public class ClassScanner {
     private Project project
     private ClassPool classPool
     private TransformInvocation transformInvocation

@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
+import com.sad.jetpack.v1.utils.ClassScanner;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override

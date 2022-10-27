@@ -32,7 +32,7 @@ dependencies {
 
     api rootProject.ext.dependencies["appcompat"]
     api rootProject.ext.dependencies["material"]
-    api project(":sad-jetpack-v1-utils")
+    //api project(":sad-jetpack-v1-utils")
     //api rootProject.ext.dependencies["constraintlayout"]
     //api rootProject.ext.dependencies["multidex"]
     //testImplementation 'junit:junit:4.13.2'

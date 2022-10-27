@@ -1,5 +1,5 @@
 plugins {
-    id 'java-library'
+    id 'groovy'
     id 'maven-publish'
 }
 
@@ -13,6 +13,6 @@ dependencies {
     implementation gradleApi()
     implementation localGroovy()
     implementation 'com.android.tools.build:gradle-api:7.2.2'
-    implementation 'org.javassist:javassist:latest.release'
+    implementation 'org.javassist:javassist:3.29.2-GA'
     compileOnly rootProject.ext.dependencies["commons-io"]
 }
